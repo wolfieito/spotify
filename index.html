@@ -10,32 +10,56 @@
     <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row">
-          <div class="col-3 leftColumn">
-            <div class="col">
-              <div class="row">
-                <img class="img-fluid" id="logoSpotify" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWwSDcPB5BiNYYBFYC9kcG8st464LzORMRsA&usqp=CAU" alt="logoSpotify">
-                <link rel="stylesheet" href="">
-              </div>
-              <div class="row" id="linkList">
-                <ul id="firstList">
-                  <li class="active link"><a href="#">Inicio</a></li>
-                  <li class="link"><a href="#">Buscar</a></li>
-                  <li class="link"><a href="#">Tu biblioteca</a></li>
-                </ul>
-                <ul>
-                  <li class="link"><a href="#"><i class="bi bi-plus-square"></i> Crear lista</a></li>
-                  <li class="link"><a href="#"><i class="bi bi-suit-heart-fill"></i> Canciones que te gustan</a></li>
-                </ul>
-              </div>
-            </div>            
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-3 leftColumn">
+        <div class="col">
+          <div class="row">
+            <div class="text-center">
+              <img class="img-fluid pt-2" id="logoSpotify" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWwSDcPB5BiNYYBFYC9kcG8st464LzORMRsA&usqp=CAU" alt="logoSpotify">
+            </div>
           </div>
-          <div class="col musicOptions">
-
-          </div>
-        </div>
+          <div class="row">
+            <ul id="firstList" class="pt-2 pb-5">
+              <li class="active link"><a href="#"><i class="bi bi-house-door-fill"></i> Inicio</a></li>
+              <li class="link"><a href="#"><i class="bi bi-search"></i> Buscar</a></li>
+              <li class="link" id="biblio"><a href="#"><i class="bi bi-book"></i> Tu biblioteca</a></li>
+              <li class="link"><a href="#"><i class="bi bi-plus-square"></i> Crear lista</a></li>
+              <li class="link"><a href="#"><i class="bi bi-suit-heart-fill"></i> Canciones que te gustan</a></li>
+            </ul>
+            <div class="row">
+              <ul class="list-inline" id="aboutList">
+                <li class="link list-inline-item"><a href="#">Legal</a></li>
+                <li class="link list-inline-item"><a href="#">Centro de privacidad</a></li>
+                <li class="link list-inline-item"><a href="#">Politica de privacidad</a></li>
+                <li class="link list-inline-item"><a href="#">Cookies</a></li>
+                <li class="link list-inline-item"><a href="#">Informacion sobre anuncios</a></li>
+                <li class="link list-inline-item"><a href="#">Accesibilidad</a></li>
+              </ul>
+              <a class="cookies2 pb-5" href="">Cookies</a>
+            </div>
+            <div class="text-center">
+              <button id="btnIdioma" type="button" class="btn btn-ligh btn-primary-outline rounded-pill"><i class="bi bi-globe"></i> Español de España</button>
+            </div>
+          </div>   
+        </div>            
       </div>
+      <div class="col musicOptions">
+
+      </div>
+    </div>
+    <a href="">
+      <nav class="navbar fixed-bottom navbar-light ps-3" id="footbar">
+        <div>
+          <p>MUESTRA DE SPOTIFY</p>
+          <p>Registrate para disfrutar de canciones y podcast sin limites, con anuncios ocacionales. No hace falta tarjeta de credito</p>
+        </div>
+        <div class="text-center pe-3">
+          <button id="btnRegistrarse" type="button" class="btn btn-light rounded-pill">Registrate gratis</button>
+        </div>
+      </nav>
+    </a>
+  </div>
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="action.js"></script>
