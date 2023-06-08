@@ -3,7 +3,7 @@
 }
 a {
     text-decoration: none; 
-    color: gray;
+    color: rgb(104, 104, 104);
 }
 .leftColumn{
     float: left;
@@ -13,7 +13,7 @@ a {
 }
 .musicOptions{
     float: left;
-    background-color: gray;
+    background-color: rgb(71, 71, 71);
     height: 100vh;
     min-width: 250px;
 }
@@ -22,6 +22,18 @@ a {
     min-width: 75px;
 }
 .cookies2:hover{
+    text-decoration-line:underline;
+}
+.underline1{
+    color: white;
+}
+.underline2{
+    color: #141414;
+}
+.btnPlay{
+    position: absolute;
+}
+.underline1:hover, .underline2:hover{
     text-decoration-line:underline;
 }
 #btnIdioma{
@@ -43,9 +55,12 @@ a {
     height: 50px;
     width: 110%;
 }
+#btnIniciarSesion{
+    margin-bottom: 4px;
+}
 #btnIniciarSesion:hover {
     height: 40px;
-    width: 150px;
+    width: 130px;
 }
 #footbar{
     background: linear-gradient(to right, rgb(148, 35, 189), rgb(0, 134, 187));
@@ -54,6 +69,7 @@ a {
 #topBar{
     background-color: rgb(41, 41, 41);
     height: 50px;
+    min-height: 50px;
 }
 .topBarText{
     color: gray;
@@ -62,11 +78,71 @@ a {
     color: white;
     font-size: 110%;
 }
-
+.topBar1{
+    min-width: 105px;
+    max-width: 105px;
+}
+.topBar2{
+    min-width: 327px;
+}
 ul#firstList li a:hover, ul#firstList li a:active {
     color: white !important;
 }
 
 ul#firstList li.active a {
     color: white !important;
+}
+@media (max-width: 845px) {
+    .topText {
+      display: none;
+    }
+    .dropdown{
+        display: block;
+    }
+}
+
+@media (min-width: 846px) {
+    .topText {
+      display: block;
+    }
+    .dropdown{
+        display: none;
+    }
+}
+
+.card{
+    max-width: 230px;
+    min-height: 320px;
+    max-height: 350px;
+    min-width: 164px;
+}
+.card-img-top{
+    max-width: 215px;
+    max-height: 215px;
+    min-width: 100px;
+    min-height: 100px;
+}
+.listItem2{
+    list-style-type: none;
+}
+.listItem2:hover{
+    text-decoration-line: underline;
+
+}
+.btnArrow{
+    visibility: hidden;
+    position: absolute;
+    top: 55%;
+    right: 10%;
+    opacity: 0;
+    transition: all 70ms ease-out;
+}
+.card:hover .btnArrow{
+    visibility: visible;
+    top: 50%;
+    opacity: 1;
+    transition: all 70ms ease-in;
+}
+.container-fluid{
+    margin-bottom: 89px;
 }
