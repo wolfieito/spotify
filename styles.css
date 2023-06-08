@@ -43,9 +43,26 @@ a {
     height: 50px;
     width: 110%;
 }
+#btnIniciarSesion:hover {
+    height: 40px;
+    width: 150px;
+}
 #footbar{
     background: linear-gradient(to right, rgb(148, 35, 189), rgb(0, 134, 187));
+    height: 90px;
 }
+#topBar{
+    background-color: rgb(41, 41, 41);
+    height: 50px;
+}
+.topBarText{
+    color: gray;
+}
+.topBarText:hover{
+    color: white;
+    font-size: 110%;
+}
+
 ul#firstList li a:hover, ul#firstList li a:active {
     color: white !important;
 }

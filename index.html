@@ -23,11 +23,11 @@
             <ul id="firstList" class="pt-2 pb-5">
               <li class="active link"><a href="#"><i class="bi bi-house-door-fill"></i> Inicio</a></li>
               <li class="link"><a href="#"><i class="bi bi-search"></i> Buscar</a></li>
-              <li class="link" id="biblio"><a href="#"><i class="bi bi-book"></i> Tu biblioteca</a></li>
+              <li class="link pb-5" id="biblio"><a href="#"><i class="bi bi-book"></i> Tu biblioteca</a></li>
               <li class="link"><a href="#"><i class="bi bi-plus-square"></i> Crear lista</a></li>
               <li class="link"><a href="#"><i class="bi bi-suit-heart-fill"></i> Canciones que te gustan</a></li>
             </ul>
-            <div class="row">
+            <div class="row pt-5">
               <ul class="list-inline" id="aboutList">
                 <li class="link list-inline-item"><a href="#">Legal</a></li>
                 <li class="link list-inline-item"><a href="#">Centro de privacidad</a></li>
@@ -45,14 +45,27 @@
         </div>            
       </div>
       <div class="col musicOptions">
-
+        <div class="row" id="topBar">
+          <div class="col pe-3">
+            <button id="buttonMore" type="button" class="btn btn-dark rounded-pill mt-1 pt-1"><</button>
+            <button id="buttonMinus" type="button" class="btn btn-dark rounded-pill mt-1 pt-1">></button>
+          </div>
+          <div class="col pe-2 pt-2">
+            <li class="link list-inline-item"><a href="#" class="topBarText">Premium</a></li>
+            <li class="link list-inline-item"class="topBarText"><a href="#" class="topBarText">Asistencia</a></li>
+            <li class="link list-inline-item"><a href="#" class="topBarText">Descargar</a></li>
+            <p class="text-white list-inline-item ps-2 pe-2 pt-2">|</p>
+            <li class="link list-inline-item"><a href="#" class="topBarText">Registrarse</a></li>
+            <button id="btnIniciarSesion" type="button" class="btn btn-light rounded-pill align-top">Iniciar sesion</button>
+          </div>
+        </div>
       </div>
     </div>
     <a href="">
       <nav class="navbar fixed-bottom navbar-light ps-3" id="footbar">
         <div>
-          <p>MUESTRA DE SPOTIFY</p>
-          <p>Registrate para disfrutar de canciones y podcast sin limites, con anuncios ocacionales. No hace falta tarjeta de credito</p>
+          <p class="text-white">MUESTRA DE SPOTIFY</p>
+          <p class="text-white">Registrate para disfrutar de canciones y podcast sin limites, con anuncios ocacionales. No hace falta tarjeta de credito</p>
         </div>
         <div class="text-center pe-3">
           <button id="btnRegistrarse" type="button" class="btn btn-light rounded-pill">Registrate gratis</button>
